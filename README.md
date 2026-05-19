@@ -96,3 +96,80 @@ namespace ConsoleApplication1
         }
     }
 }
+
+// 4)
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int valor;
+            int contador;
+            int multiplicador;
+            int tabla;
+            tabla = 0;
+            contador = 1;
+            multiplicador = 1;
+
+            Console.WriteLine("Introduzca el numero para mostrar su tabla: ");
+            valor = int.Parse(Console.ReadLine());
+
+            do
+            {
+                tabla = valor * multiplicador;
+                Console.WriteLine(valor+"x"+multiplicador+" = "+tabla);
+
+                multiplicador = multiplicador + 1;
+                contador = contador + 1;
+
+            } while (contador < 13);
+           
+        }
+    }
+}
+
+// 5)
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            String clave;
+            String entrada;
+            Console.WriteLine("Clave de acceso?: ");
+            clave = Convert.ToString(Console.ReadLine());
+            do
+            {
+                Console.WriteLine("Introduzca la clave de acceso: ");
+                entrada = Convert.ToString(Console.ReadLine());
+                if (clave == entrada)
+                {
+                    Console.WriteLine("Accesso permitido");
+                }
+                else
+                {
+                    Console.WriteLine("Clave no valida");
+                }
+            } while (clave != entrada);
+
+        }
+    }
+}
+
+// 6)
