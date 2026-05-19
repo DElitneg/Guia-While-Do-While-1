@@ -67,3 +67,32 @@ namespace ConsoleApplication1
 }
 
 // 3)
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int valor;
+            int ahorro;
+            ahorro = 0;
+
+            do
+            {
+                Console.WriteLine("El programa se detendra al insertar 0 ");
+                Console.WriteLine("Introduzca el valor a sumar: ");
+                valor = int.Parse(Console.ReadLine());
+                ahorro += valor;
+            } while (valor != 0);
+            Console.WriteLine("El total acumulado es: " + ahorro);
+
+        }
+    }
+}
