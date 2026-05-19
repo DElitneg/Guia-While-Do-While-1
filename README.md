@@ -202,3 +202,39 @@ namespace ConsoleApplication1
         }
     }
 }
+
+// 7)
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int nota;
+            int contador;        
+            int promedio;
+            promedio = 0;
+            contador = 1;
+                    
+            do
+            {
+                Console.WriteLine("Introduzca el numero para mostrar su tabla: ");
+                nota = int.Parse(Console.ReadLine());
+                promedio += nota;       
+                contador = contador + 1;
+            } while (contador < 6);
+            int promediowd;
+            promediowd = promedio / 10;
+            Console.WriteLine("El promedio es de " + promedio + "/50 o ");
+
+        }
+    }
+}
+// sin terminar
