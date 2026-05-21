@@ -218,23 +218,24 @@ namespace ConsoleApplication1
         {
 
             int nota;
-            int contador;        
+            int contador;
             int promedio;
             promedio = 0;
             contador = 1;
-                    
+
             do
             {
-                Console.WriteLine("Introduzca el numero para mostrar su tabla: ");
+                Console.WriteLine("Nota del alumno: ");
                 nota = int.Parse(Console.ReadLine());
-                promedio += nota;       
+                promedio += nota;
                 contador = contador + 1;
             } while (contador < 6);
-            int promediowd;
-            promediowd = promedio / 10;
-            Console.WriteLine("El promedio es de " + promedio + "/50 o ");
+            int promedioreal;
+            promedioreal = promedio / 5;
+            Console.WriteLine("El promedio es de " + promedio + "/50 puntos o "+promedioreal);
 
         }
     }
 }
-// sin terminar
+
+// 8)
