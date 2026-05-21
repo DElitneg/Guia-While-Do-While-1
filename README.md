@@ -216,13 +216,9 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-
-            int nota;
-            int contador;
-            int promedio;
+            int nota, contador, promedio;
             promedio = 0;
             contador = 1;
-
             do
             {
                 Console.WriteLine("Nota del alumno: ");
@@ -230,9 +226,7 @@ namespace ConsoleApplication1
                 promedio += nota;
                 contador = contador + 1;
             } while (contador < 6);
-            int promedioreal;
-            promedioreal = promedio / 5;
-            Console.WriteLine("El promedio es de " + promedio + "/50 puntos o "+promedioreal);
+            Console.WriteLine("El promedio es de " + promedio/5);
 
         }
     }
