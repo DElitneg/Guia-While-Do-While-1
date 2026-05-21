@@ -264,3 +264,42 @@ namespace ConsoleApplication1
         }
     }
 }
+
+// 9)
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            String opcion;
+            do
+            {
+                Console.WriteLine("Opciones: ");
+                Console.WriteLine("1. Saludar");
+                Console.WriteLine("2. Despedirse");
+                Console.WriteLine("3. [Salir]");
+                opcion = Convert.ToString(Console.ReadLine());
+                if (opcion == "1")
+                {
+                    Console.WriteLine("- Saludas inexpresivamente - . . . ");
+                }
+                else if (opcion == "2")
+                {
+                    Console.WriteLine("- Te despides de . . .");
+                }
+            } while (opcion != "3");            
+            Console.WriteLine("Saliendo del programa . . .");
+
+        }
+    }
+}
+
+// 10)
