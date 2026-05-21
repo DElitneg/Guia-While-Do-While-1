@@ -303,3 +303,35 @@ namespace ConsoleApplication1
 }
 
 // 10)
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int PrimerNumero;
+            int SegundoNumero;
+            int Suma;
+            Suma = 0;
+            Console.WriteLine("Primer numero: ");
+            PrimerNumero = int.Parse(Console.ReadLine());
+            Console.WriteLine("Segundo numero: ");
+            SegundoNumero = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= SegundoNumero; i++)
+            {
+                Suma += PrimerNumero;
+                // Console.WriteLine(Suma);
+            }
+            Console.WriteLine(PrimerNumero + " x " + SegundoNumero + " = " + Suma);
+
+        }
+    }
+}
